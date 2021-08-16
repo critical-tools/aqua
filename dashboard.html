@@ -16,11 +16,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AquaFN">
-  <meta property="og:description" content="Fortnite bot">
+  <meta property="og:title" content="The Movies Project">
+  <meta property="og:description" content="This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!">
 
   <title>Bot creation</title>
-  <meta name="description" content="Fortnite tools site">
+  <meta name="description" content="This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!">
 
   <link rel="shortcut icon" type="image/x-icon" href="">
 
@@ -49,7 +49,7 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed" style="">
 
-  <a class="navbar-brand" href="index.html" style="color: black;"><h5><b>AquaFN</b></h5></a>
+  <a class="navbar-brand" href="/portfolYOU/" style="color: black;"><h5><b>AquaFN</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
@@ -93,27 +93,64 @@
 <form action="https://replit.com/@criticalltools/Leaker-Bot#.replit" target="_blank">
 <center><button class="btn btn-outline-info" style="width: 333px;">Click here to fork the project!&nbsp;🛠</button></form></center>
 
-<center><h2>Edit the<a href="https://replit.com/@criticalltools/Leaker-Bot#.replit"><b style="color: black;">&nbsp;Config.json file&nbsp;🛠</b></h2></a></center>
+<center><h2>Edit the<a href="https://replit.com/@criticalltools/Leaker-Bot#.replit"><b style="color: black;">&nbsp;Config.json file&nbsp;<i class="bi bi-gear"></i></b></h2></a></center>
 
 <p>Click on the <b style="color: green">config.json</b>, Edit email and password to your own details. Then change friend requests to your choice but <b class="color: red">Do not change the status!. This is supporting our project since its free.</b> The first 100 people spotted using this status gets 1 month of unlimited hosting!</p>
+<b>Beware! The account being used here will be taken over. Never use your main account ever!
+</b>
+<p>----------------</p><b>Dont share your repl with others or your details will be compromised!</b>
+<hr>
 <form action="https://replit.com/@criticalltools/Leaker-Bot#.replit" target="_blank">
-<center><button class="btn btn-outline-info" style="width: 333px;">Click here to go to the config file&nbsp;🛠</button></form></center>
+<center><button class="btn btn-outline-info" style="width: 333px;">Click here to go to the config file&nbsp;<i class="bi bi-gear"></i></button></form></center>
 <hr>
 <p>Type this in <B>shell</p></B>
-<img src="Screenshot 2021-08-14 220416.png" style="height: 70px; width: 944px;">
+<center>
+  <input type="text" value="pip install -r requirements.txt"  class="form-control" id="myInput" style="width: 412px;">
+<button class="btn btn-outline-primary" onclick="myFunction2()">Copy text&nbsp;<ion-icon name="documents-outline"></ion-icon></button></center>
+<img src="Screenshot 2021-08-14 220416.png" style="height: 70px; width: 1004px;">
 <hr>
 <p>Then after packages are installed, Type <b>the text from the &nbsp;<ion-icon name="image-outline"></ion-icon></ion-icon></b>&nbsp;Below using the <B>button!</p></B>
 <hr>
-<img src="Screenshot 2021-08-14 221213ptyy.png" style="height: 70px; width: 944px;">
-<center><button class="btn btn-outline-primary">Copy text&nbsp;<ion-icon name="documents-outline"></ion-icon></button></center>
+<img src="Screenshot 2021-08-14 221213ptyy.png" style="height: 70px; width: 1004px;">
+<center>
+  <input type="text" value="python main.py"  class="form-control" id="myInput" style="width: 212px;">
+<button class="btn btn-outline-primary" onclick="myFunction()">Copy text&nbsp;<ion-icon name="documents-outline"></ion-icon></button></center>
+<hr>
+<center>
+<input type="text" id="input" placeholder="Please enter your bot's epic or epic username" class="form-control">
+<button class="btn btn-outline-info"
+data-toggle="modal" data-target="#dashboardstatus">Dashboard&nbsp;<i class="bi bi-gear"></i></button>
+</p>
 
-<center><button class="btn btn-outline-success" style="width: 333px;" onclick="UIkit.notification({message: 'Your bot has successfully been started', status: 'success'})">Start Bot&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+<center><button class="btn btn-outline-success" style="width: 333px;" onclick="UIkit.notification({message: 'Your bot has successfully been started', status: 'success'})">Start Bot&nbsp;<i class="bi bi-play-circle-fill"></i>
   <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-</svg></button></center>
+</button>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+  var input = $('#input');
+  var text = $('#text');
+  var button = $('#button');
+
+  // button.on('click', function() {
+  //  text.html(input.val());
+  // });
+
+  input.on('input', function() {
+   text.html(input.val());
+  });
+ });
+</script>
+
+<button class="btn btn-outline-danger" style="width: 233px;" onclick="UIkit.notification({message: 'Delete your current repl project to delete your bot!.', status: 'success'})">Delete Bot&nbsp;
+  <ion-icon name="trash-outline" style="margin-top: -99px;"></ion-icon></button></Center>
+<center>
+<hr>  <b>
+       Starting and deleting a bot may should take 1-2 minutes
+     </b>
 <hr>
 <p>LeakerBot handled by AquaFN. We store your data safely and we never will save your credientials&nbsp;<ion-icon name="checkmark-circle-outline"></ion-icon></p>
-<hr>
-</a>
 </p>
 
 </div>
@@ -122,6 +159,16 @@
   <footer class="mt-auto py-3 text-center">
 
   <small class="text-muted mb-2">
+    <hr>
+    <button class="btn btn-outline-success" style="width: 333px;" onclick="UIkit.notification({message: 'Share about us on your social media, etc . Twitter to support us!', status: 'success'})">Tell your friends about us!&nbsp;<i class="bi bi-person-circle"></i></button>
+    <hr>
+<b>By using this site you agree that we are not responsible for any destruction or faults happening to your account!</b>
+<hr>
+<b>This project is not endorsed, or encouraged by Epic Games, All copyrighted material go to their respected owners</b>
+<hr>
+<b></b>
+
+</a>
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
     by <strong>AquaFN</strong>
   </small>
@@ -136,7 +183,71 @@
 
 </div>
 </footer>
+<div class="modal fade" id="dashboardstatus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your current Leaker Bot details!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+ <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Status</th>
+      <th scope="col">Friends</th>
+      <th scope="col">Blocked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+    <td id="text"></td>
+      <td>{status : your bot is waiting to be used, tell your friends about us!}</td>
+      <td>{friends : {null}</td>
+      <td>{blocked : 0}</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close&nbsp;<i class="bi bi-x-circle"></i></ion-icon></button>
+        <a href="dashboard.html"><button type="button" class="btn btn-outline-danger">Reset changes!&nbsp;<i class="bi bi-arrow-counterclockwise"></i></button></a>
+      </form>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script>
+  function myUserLeaker()
+  {
+var fname = document.getElementById("fn").value;
+var heading = document.getElementById("display");
+heading.innerHTML = fname;
+
+  }
+  function myFunction(){
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value + ", Paste it in the shell!");
+}
+ function myFunction2() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value + ", Paste it in the shell!");
+}
+</script>
   
   <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -149,6 +260,7 @@
 
 <!-- Bootstrap JS CDN -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <!-- wow.js CDN & Activation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
