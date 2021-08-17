@@ -19,7 +19,7 @@
   <meta property="og:title" content="The Movies Project">
   <meta property="og:description" content="This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!">
 
-  <title>Projects - AquaFN</title>
+  <title>Leaker Bot - AquaFN</title>
   <meta name="description" content="This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!">
 
   <link rel="shortcut icon" type="image/x-icon" href="">
@@ -29,6 +29,7 @@
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link href="favicon.jpg" rel="icon">
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,16 +37,49 @@
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="uicss/uikit.min.css" />
-  <link href="favicon.jpg" rel="icon">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
    <link rel="stylesheet" href="animated.css" type="text/css">
+<script>// To disable F12 options
+document.onkeypress = function (event) {
+event = (event || window.event);
+if (event.keyCode == 123) {
+return false;
+}
+}
+document.onmousedown = function (event) {
+event = (event || window.event);
+if (event.keyCode == 123) {
+return false;
+}
+}
+document.onkeydown = function (event) {
+event = (event || window.event);
+if (event.keyCode == 123) {
+return false;
+}
+}
 
-</head>
+// To To Disable ctrl+c, ctrl+u
 
-<body class="h-100 d-flex flex-column" style="color: black;">
+jQuery(document).ready(function($){
+$(document).keydown(function(event) {
+var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+alert('Sorry, This Functionality Has Been Disabled!');
+//disable key press porcessing
+return false;
+}
+});
+});
+</script>
+</head><script>
+
+</script>
+<body class="h-100 d-flex flex-column" style="color: black;" oncontextmenu="return false;">
 
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed" style="">
@@ -57,13 +91,12 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="dashboard.html"style="color: black;">Bot</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="dashboard.html" style="color: black;">Bot</a>
 
       <a class="nav-item nav-link " href="projects.html" style="color: black;">Dashboard</a>
 
    
 
-      <!--<a class="nav-item nav-link " href="/"style="color: black;">Help</a>-->
 
       <a class="nav-item nav-link " href="https://discord.gg/GN2XPHQ7Xd" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
   <path d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"/>
@@ -78,14 +111,14 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 post">
-  <h1 id="the-movies-project">Tools&nbsp;<ion-icon name="hammer-outline"></ion-icon></h1>
+  <h1 id="the-movies-project">ItemShop Tracker!&nbsp;🎊🎉</h1>
   <hr>
-<a class="list-group-item active disabled text-white">--</a><a class="list-group-item list-group-item-action" href="dashboard.html" target="_blank">
-         Leaker Bot</a><a class="list-group-item list-group-item-action" target="_blank" href="itemshop.html">
-      Itemshop (Battle Royale) Tracker!</a>
 
-<hr>
-<h4>Got any Ideas? Join our discord server from the top bar and suggest some ideas to us!</h4>
+<img src="https://api.nitestats.com/v1/shop/image?header=Shop+Tracker+&subheader=Current+Fortnite+Shop+&footer=Created+By+AquaFN+&textcolor=default+&background=ffb300"></div>
+
+
+<Hr>
+
   <footer class="mt-auto py-3 text-center">
 
   <small class="text-muted mb-2">
@@ -98,12 +131,44 @@
 <center>
 <p>Leaker Bot coded using <ion-icon name="logo-python"></ion-icon></p></center>
 <Center><p>Tiktok is @kayqwa&nbsp;<ion-icon name="logo-tiktok"></ion-icon></p></Center>
-
-
-
+<hr>
+<CentER><B>Copyright AquaFN</B></CentER>
+<CentER><p>All apis and images used go their respected owners</p><CentER>
+<CentER><p>We do not tolerate unauthorized use of our images</p></CentER>
+      </form>
+      </form>
+      </div>
+    </div>
+  </div>
 </div>
-</footer>
+<style> 
 
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script>
+
+  function myUserLeaker()
+  {
+var fname = document.getElementById("fn").value;
+var heading = document.getElementById("display");
+heading.innerHTML = fname;
+
+  }
+  function myFunction(){
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value + ", Paste it in the shell!");
+}
+ function myFunction2() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value + ", Paste it in the shell!");
+}
+</script>
   
   <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -116,6 +181,7 @@
 
 <!-- Bootstrap JS CDN -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <!-- wow.js CDN & Activation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
@@ -123,8 +189,7 @@
 <script src="uijs/uikit.min.js"></script>
 <script src="uijs/uikit-icons.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5937143642713610"
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5937143642713610"
      crossorigin="anonymous"></script>
 
 <!-- Initialize all tooltips -->
